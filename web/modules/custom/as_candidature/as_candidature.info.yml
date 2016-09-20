@@ -1,0 +1,7 @@
+name: Candidature
+type: module
+description: Provides job for people
+core: 8.x
+package: Aston
+dependencies:
+  - node

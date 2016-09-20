@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_temps_de_travail
+        - node.type.annonces_web
+    module:
+        - text
+id: node.annonces_web.field_temps_de_travail
+field_name: field_temps_de_travail
+entity_type: node
+bundle: annonces_web
+label: 'Temps de travail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+    display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_tel
+        - node.type.entreprise
+id: node.entreprise.field_tel
+field_name: field_tel
+entity_type: node
+bundle: entreprise
+label: Tel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+    min: null
+    max: null
+    prefix: ''
+    suffix: ''
+field_type: integer

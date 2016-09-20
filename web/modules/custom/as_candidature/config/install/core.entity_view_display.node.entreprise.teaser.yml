@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.entreprise.field_adresse
+        - field.field.node.entreprise.field_tel
+        - node.type.entreprise
+    module:
+        - user
+id: node.entreprise.teaser
+targetEntityType: node
+bundle: entreprise
+mode: teaser
+content:
+    links:
+        weight: 100
+hidden:
+    field_adresse: true
+    field_tel: true

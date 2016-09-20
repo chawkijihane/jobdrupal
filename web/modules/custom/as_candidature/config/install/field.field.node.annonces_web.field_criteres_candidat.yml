@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_criteres_candidat
+        - node.type.annonces_web
+    module:
+        - text
+id: node.annonces_web.field_criteres_candidat
+field_name: field_criteres_candidat
+entity_type: node
+bundle: annonces_web
+label: 'Critères candidat'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+    display_summary: false
+field_type: text_with_summary

@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_salaire
+        - node.type.annonces_web
+id: node.annonces_web.field_salaire
+field_name: field_salaire
+entity_type: node
+bundle: annonces_web
+label: salaire
+description: ''
+required: false
+translatable: false
+default_value:
+    -
+        value: 1043
+default_value_callback: ''
+settings:
+    min: null
+    max: null
+    prefix: €
+    suffix: ''
+field_type: integer

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - core.entity_view_mode.node.teaser
+        - field.field.node.annonces_web.field_criteres_candidat
+        - field.field.node.annonces_web.field_date_de_publication
+        - field.field.node.annonces_web.field_details
+        - field.field.node.annonces_web.field_duree
+        - field.field.node.annonces_web.field_localisation_du_poste
+        - field.field.node.annonces_web.field_profil
+        - field.field.node.annonces_web.field_salaire
+        - field.field.node.annonces_web.field_statut
+        - field.field.node.annonces_web.field_temps_de_travail
+        - field.field.node.annonces_web.field_type_de_contrat
+        - node.type.annonces_web
+    module:
+        - user
+id: node.annonces_web.teaser
+targetEntityType: node
+bundle: annonces_web
+mode: teaser
+content:
+    links:
+        weight: 100
+hidden:
+    field_criteres_candidat: true
+    field_date_de_publication: true
+    field_details: true
+    field_duree: true
+    field_localisation_du_poste: true
+    field_profil: true
+    field_salaire: true
+    field_statut: true
+    field_temps_de_travail: true
+    field_type_de_contrat: true

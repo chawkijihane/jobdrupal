@@ -1,0 +1,76 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.entreprise.field_adresse
+        - field.field.node.entreprise.field_discription
+        - field.field.node.entreprise.field_tel
+        - node.type.entreprise
+    module:
+        - path
+        - text
+id: node.entreprise.default
+targetEntityType: node
+bundle: entreprise
+mode: default
+content:
+    created:
+        type: datetime_timestamp
+        weight: 10
+        settings: {  }
+        third_party_settings: {  }
+    field_adresse:
+        weight: 33
+        settings:
+            rows: 9
+            summary_rows: 3
+            placeholder: ''
+        third_party_settings: {  }
+        type: text_textarea_with_summary
+    field_discription:
+        weight: 34
+        settings:
+            rows: 9
+            summary_rows: 3
+            placeholder: ''
+        third_party_settings: {  }
+        type: text_textarea_with_summary
+    field_tel:
+        weight: 32
+        settings:
+            placeholder: ''
+        third_party_settings: {  }
+        type: number
+    path:
+        type: path
+        weight: 30
+        settings: {  }
+        third_party_settings: {  }
+    promote:
+        type: boolean_checkbox
+        settings:
+            display_label: true
+        weight: 15
+        third_party_settings: {  }
+    sticky:
+        type: boolean_checkbox
+        settings:
+            display_label: true
+        weight: 16
+        third_party_settings: {  }
+    title:
+        type: string_textfield
+        weight: -5
+        settings:
+            size: 60
+            placeholder: ''
+        third_party_settings: {  }
+    uid:
+        type: entity_reference_autocomplete
+        weight: 5
+        settings:
+            match_operator: CONTAINS
+            size: 60
+            placeholder: ''
+        third_party_settings: {  }
+hidden: {  }

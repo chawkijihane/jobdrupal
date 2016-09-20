@@ -1,0 +1,91 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.annonces_web.field_criteres_candidat
+        - field.field.node.annonces_web.field_date_de_publication
+        - field.field.node.annonces_web.field_details
+        - field.field.node.annonces_web.field_duree
+        - field.field.node.annonces_web.field_localisation_du_poste
+        - field.field.node.annonces_web.field_profil
+        - field.field.node.annonces_web.field_salaire
+        - field.field.node.annonces_web.field_statut
+        - field.field.node.annonces_web.field_temps_de_travail
+        - field.field.node.annonces_web.field_type_de_contrat
+        - node.type.annonces_web
+    module:
+        - datetime
+        - text
+        - user
+id: node.annonces_web.default
+targetEntityType: node
+bundle: annonces_web
+mode: default
+content:
+    field_criteres_candidat:
+        weight: 108
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_date_de_publication:
+        weight: 109
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_details:
+        weight: 102
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_duree:
+        weight: 103
+        label: above
+        settings:
+            format_type: medium
+            timezone_override: ''
+        third_party_settings: {  }
+        type: datetime_default
+    field_localisation_du_poste:
+        weight: 107
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_profil:
+        weight: 105
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_salaire:
+        weight: 104
+        label: above
+        settings:
+            thousand_separator: ''
+            prefix_suffix: true
+        third_party_settings: {  }
+        type: number_integer
+    field_statut:
+        weight: 111
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_temps_de_travail:
+        weight: 110
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_type_de_contrat:
+        weight: 106
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    links:
+        weight: 100
+hidden: {  }

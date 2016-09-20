@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.field.node.entreprise.field_adresse
+        - field.field.node.entreprise.field_discription
+        - field.field.node.entreprise.field_tel
+        - node.type.entreprise
+    module:
+        - text
+        - user
+id: node.entreprise.default
+targetEntityType: node
+bundle: entreprise
+mode: default
+content:
+    field_adresse:
+        weight: 103
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_discription:
+        weight: 104
+        label: above
+        settings: {  }
+        third_party_settings: {  }
+        type: text_default
+    field_tel:
+        weight: 102
+        label: above
+        settings:
+            thousand_separator: ''
+            prefix_suffix: true
+        third_party_settings: {  }
+        type: number_integer
+    links:
+        weight: 100
+hidden: {  }

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+    config:
+        - field.storage.node.field_discription
+        - node.type.entreprise
+    module:
+        - text
+id: node.entreprise.field_discription
+field_name: field_discription
+entity_type: node
+bundle: entreprise
+label: Discription
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+    display_summary: false
+field_type: text_with_summary
